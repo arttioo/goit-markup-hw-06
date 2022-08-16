@@ -323,10 +323,11 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -381,6 +382,8 @@ img {
   color: #757575;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .policy-check {
@@ -423,6 +426,8 @@ img {
 .form-checkbox:checked + .policy .check-icon {
   fill: var(--white);
 }
+
+
 
 /* .check-icon {
   display: flex;
@@ -780,6 +785,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
+  
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -789,11 +795,12 @@ img {
   color: var(--white);
 }
 
+
 .portfolio-link:hover .portfolio-text,
 .portfolio-link:focus .portfolio-text
  {
   opacity: 1;
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
 .portfolio-list .item {
@@ -959,6 +966,12 @@ img {
   padding-left: 16px;
   background-color: transparent;
   outline: transparent;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-input-footer::placeholder {
@@ -999,7 +1012,7 @@ img {
 }
 
 .footer-submit {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 
