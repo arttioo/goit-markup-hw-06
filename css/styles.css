@@ -265,7 +265,7 @@ img {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  
 }
 
 .modal-submit {
@@ -283,11 +283,18 @@ img {
 
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 55px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
- 
+  margin-bottom: 30px;
+}
+
+.modal-submit:hover,
+.modal-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property:box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close {
@@ -307,6 +314,9 @@ img {
 .btn-close:focus,
 .btn-close:hover {
   fill: var(--accent-color);
+  transition-property:fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -324,6 +334,13 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+.form-wrap-comment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .form-label {
@@ -348,6 +365,9 @@ img {
 .form-input:focus,
 .form-comment:focus {
   border-color: var(--accent-color);
+  transition-property:border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .input-icon
@@ -383,7 +403,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .policy-check {
@@ -395,7 +415,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .check-icon {
@@ -969,7 +988,7 @@ img {
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20/16);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
